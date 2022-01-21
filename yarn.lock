@@ -1052,6 +1052,16 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@expo-google-fonts/roboto-condensed@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/roboto-condensed/-/roboto-condensed-0.2.0.tgz#e565af7c6cb608d6ad77def42bca4f9f09052248"
+  integrity sha512-LeltvDXCWBKwwtpt4SH/8qqXHKrIoxFF4E8m4i+tC8LyulPqc7P16VPL+uhnxkXLCFZ6MPSprDwz7ECF+sfKkg==
+
+"@expo-google-fonts/roboto-slab@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/roboto-slab/-/roboto-slab-0.2.0.tgz#929eb7284bf0e35748005520f5d29bd091531d5a"
+  integrity sha512-JJu7szG1G6qeBInybVZcISRSedeN3Sgf9R/sgfKI60LmVDZbdcBydfgrphvk2jd0q2zsAUBd/hpshxoEkLv31w==
+
 "@expo/config-plugins@4.0.15", "@expo/config-plugins@^4.0.2":
   version "4.0.15"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-4.0.15.tgz#cc170a0cf890973b6491cf357540e9955296019c"

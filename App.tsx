@@ -1,11 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { AppTemplate } from './components/templates'
+import {
+  useFonts,
+  RobotoSlab_700Bold,
+  RobotoSlab_100Thin,
+  RobotoSlab_400Regular
+} from "@expo-google-fonts/roboto-slab";
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    RobotoSlab_700Bold,
+    RobotoSlab_100Thin,
+    RobotoSlab_400Regular
+  });
+
+  if (!fontsLoaded) {
+    return <View />;
+  }
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <AppTemplate />
     </View>
   );
 }
@@ -13,8 +28,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#344966',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+    paddingVertical: 90,
+    paddingHorizontal: 50
+  }
 });
